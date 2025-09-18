@@ -1,22 +1,54 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <base target="_top">
   <style>
-    html, body { margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; }
-    *, *::before, *::after { box-sizing: inherit; }
-    .side-navbar {
-      width: 64px;              /* debe coincidir con el ancho del object */
-      height: calc(100vh - 60px);
-      background: #333; color:#fff;
-      display:flex; flex-direction:column; align-items:center;
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
     }
-    .side-navbar ul { list-style:none; padding:1rem 0; margin:0; width:100%; }
-    .side-navbar li { margin: 1rem 0; text-align:center; }
-    .side-navbar a { color:#fff; text-decoration:none; display:block; }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    .side-navbar {
+      width: 64px;
+      height: calc(100vh - 60px);
+      background: #333;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .side-navbar ul {
+      list-style: none;
+      padding: 1rem 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .side-navbar li {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    .side-navbar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
   </style>
 </head>
+
 <body>
   <nav class="side-navbar">
     <ul>
@@ -29,4 +61,5 @@
     </ul>
   </nav>
 </body>
+
 </html>

@@ -1,15 +1,21 @@
-/***** === BASE / TOKENS (compartidos) === *****/
+/***** === BASE  === *****/
 :root {
-  --header-h: 64px;      /* altura del header */
-  --nav-w: 64px;         /* ancho de la navbar lateral */
-  --bg-page: #ffffff;    /* fondo base */
-  --bg-section: #e5e5e5; /* gris de tarjetas/barras */
+  --header-h: 64px;
+  /* altura del header */
+  --nav-w: 64px;
+  /* ancho de la navbar lateral */
+  --bg-page: #ffffff;
+  /* fondo base */
+  --bg-section: #e5e5e5;
+  /* gris de tarjetas/barras */
   --text: #222;
   --text-muted: #6a6a6a;
-  --brand: #007EA7;      /* azul */
+  --brand: #007EA7;
+  /* azul */
   --radius: 10px;
   --shadow: 0 2px 8px rgba(0, 0, 0, .06);
-  --gutter: 40px;        /* separación entre columnas */
+  --gutter: 40px;
+  /* separación entre columnas */
 
   /* Algunas páginas usan estos */
   --slot-h: 88px;
@@ -18,10 +24,18 @@
 }
 
 /***** === Reset mínimo === *****/
-*, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Estilo base del body (seguro para todo el sitio) */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   background: var(--bg-page);
@@ -30,7 +44,7 @@ body {
   overflow-x: hidden;
 }
 
-/***** === INCLUDES: header / navbar fijos === *****/
+/***** ===  header / navbar fijos === *****/
 .include-header,
 .include-navbar {
   display: block;
@@ -55,7 +69,7 @@ body {
   height: calc(100vh - var(--header-h));
 }
 
-/***** === PAGE WRAPPER: da offset para no quedar bajo header/nav === *****/
+/***** === PAGE WRAPPER: da offset para no quedar bajo de header/nav === *****/
 .page {
   position: relative;
   padding-top: var(--header-h);
@@ -63,19 +77,26 @@ body {
   min-height: 100vh;
 }
 
-/***** === GRID genérico reutilizable (si lo usas en varias vistas) ===*****/
+/***** === GRID genérico reutilizable ===*****/
 .content-grid {
   max-width: 1120px;
   margin: 28px auto 80px;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: minmax(0, 720px) 320px; /* feed + sidebar */
+  grid-template-columns: minmax(0, 720px) 320px;
+  /* feed + sidebar */
   grid-auto-rows: min-content;
   column-gap: var(--gutter);
   row-gap: 28px;
   align-items: start;
 }
-.feed, .sidebar { display: flex; flex-direction: column; gap: 28px; }
+
+.feed,
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 
 /* Banda gris opcional debajo del header */
 .sub-header-band {
@@ -83,9 +104,4 @@ body {
   height: 56px;
   width: 100%;
   box-shadow: var(--shadow);
-}
-
-/***** === Responsive genérico para content-grid ===*****/
-@media (max-width: 1024px) {
-  .content-grid { grid-template-columns: 1fr; }
 }

@@ -23,7 +23,7 @@
     height: 26px;
 }
 
-/***** === TARJETA BASE (comparten share/post/tags) ===*****/
+/***** === TARJETA BASE ===*****/
 .card {
     background: var(--bg-section);
     border-radius: var(--radius);
