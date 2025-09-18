@@ -1,0 +1,61 @@
+body.registrar-bg {
+  height: 100vh;
+  margin: 0;
+  background-color: #80ced7;
+  display: flex;            
+  justify-content: center;    
+  align-items: center;       
+}
+
+#idMidBg {
+  background-color: #9ad1d4;
+  width: 800px;
+  max-width: 95%;
+  padding: 40px;
+  border: 1px solid #007EA7;
+
+  display: flex;              
+  flex-direction: column;    
+  align-items: center;        
+}
+
+#idCreateAccount {
+  margin-bottom: 30px;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+#idRegistrar {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                  
+  padding: 20px;
+}
+
+.midrow {
+  width: 48%;
+}
+
+.fullrow {
+  width: 100%;
+}
+
+#idRegistrar .midrow:nth-child(odd),
+#idRegistrar .midrow:nth-child(even) {
+  display: inline-block;
+}
+
+#idButtonRegistrar {
+  align-self: center;
+  width: 30%;
+  background-color: #003249;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

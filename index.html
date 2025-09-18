@@ -6,33 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="iniciar-sesion-bg">
-    <h4 id="idWelcome">Bienvenido de vuelta !!!</h4>
-
     <div id="idImage">
+        <h4 id="idWelcome">Bienvenido de vuelta !!!</h4>
         <img src="https://i.etsystatic.com/42048626/r/il/ee6499/5165482813/il_fullxfull.5165482813_3fig.jpg" alt="">
     </div>
 
-    <h5 id="idIniciar">Iniciar sesión</h5>
+    <div class="col-right">
+        <h5 id="idIniciar">Iniciar sesión</h5>
 
-    <form action="frontpage.html" method="post" id="idIniciarSesion">
-        <label for="idUsuario" class="first-form"> Usuario</label>
-        <input type="text" id="idUsuario" class="first-forminput" name="usuario" placeholder="Ingresa tu usuario"
-            required>
-        <label for="idContrasena" class="first-form"> Contraseña</label>
-        <input type="password" id="idContrasena" class="first-forminput" name="contrasena"
-            placeholder="Ingresa tu contraseña" required>
-        <button id="idForgotPassword">¿Olvidaste tu contraseña?</button>
-        <input type="submit" value="Iniciar sesión" id="idButtonIniciar" class="first-forminput">
+        <form action="frontpage.html" method="post" id="idIniciarSesion">
+            <label for="idUsuario" class="first-form"> Usuario</label>
+            <input type="text" id="idUsuario" class="first-forminput" name="usuario" placeholder="Ingresa tu usuario"
+                required>
+            <label for="idContrasena" class="first-form"> Contraseña</label>
+            <input type="password" id="idContrasena" class="first-forminput" name="contrasena"
+                placeholder="Ingresa tu contraseña" required>
+            <button id="idForgotPassword">¿Olvidaste tu contraseña?</button>
+            <input type="submit" value="Iniciar sesión" id="idButtonIniciar" class="first-forminput">
 
-    </form>
+        </form>
 
-    <p id="idNoCuenta">
-        ¿No tienes una cuenta? <a href="register.html">Registrate</a>
-    </p>
+        <p id="idNoCuenta">¿No tienes una cuenta? <a href="register.html">Registrate</a></p>
 
 </body>
 
