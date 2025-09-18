@@ -1,0 +1,135 @@
+/*********** LIGA (TABLERO) ***********/
+/* Todas las variables viven dentro de .league-page para no interferir con otras vistas */
+.league-page{
+  --slot-h: 88px;
+  --stack-gap: 24px;
+  --semi-offset: calc((var(--slot-h) + var(--stack-gap)) / 2);
+}
+
+/* LONA CON EL MISMO ANCHO */
+.league-canvas{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* GRID CON LAS MISMAS PROPORCIONES (fr, no px) */
+.league-grid{
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1.4fr 0.9fr 1.1fr; /* cuartos | semi | centro | semi | cuartos */
+  column-gap: 28px;
+  align-items: start;
+}
+
+/* Títulos propios de Liga */
+#leagueSecondHeadline{
+  margin: 28px 0 0;
+  text-align: center;
+  letter-spacing: .6rem;
+  font-weight: 600;
+}
+#leagueFirstHeadline{
+  margin: 6px 0 26px;
+  text-align: center;
+  font-weight: 900;
+  font-size: clamp(36px, 5vw, 72px);
+}
+
+/* Columnas apiladas */
+.league-stack{ display: grid; row-gap: 22px; }
+
+/* Tarjetas / slots */
+.league-slot{
+  height: var(--slot-h);
+  border-radius: 16px;
+  background: linear-gradient(180deg,#f5f5f5 0%, #ececec 100%);
+  box-shadow: 0 14px 24px rgba(0,0,0,.16), inset 0 1px 0 rgba(255,255,255,.8);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Labels de columna */
+.league-section-label{
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  color: #222;
+  margin: 4px 0 6px;
+}
+
+/* ===== Centro: Campeón + Final ===== */
+.league-center{ display: grid; row-gap: 24px; }
+
+.league-champion{
+  height: 96px;
+  border-radius: 16px;
+  background: linear-gradient(180deg,#f5f5f5 0%, #ececec 100%);
+  box-shadow: 0 18px 30px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.85);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #333;
+}
+
+/* Bloque Final (etiquetas + fila con Final1 VS Final2) */
+.league-finals .league-final-labels{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 8px;
+}
+.league-finals .league-final-labels span:last-child{ text-align: right; }
+
+.league-final-row{
+  display: grid;
+  grid-template-columns: var(--w-semi) var(--vs-w) var(--w-semi);
+  column-gap: var(--final-gap);
+  align-items: center;
+  margin-top: var(--final-center);   /* coloca la Final justo en medio */
+}
+.league-vs{
+  text-align: center;
+  font-weight: 900;
+}
+
+/* ===== Semifinales: bajar columna y abrir hueco entre Semi 1 y 2 ===== */
+/* Ambas columnas de semis (2ª y 4ª) bajan respecto a cuartos */
+.league-semis{
+  margin-top: var(--semi-top);
+  display: grid;
+  /* Fila1: Semi1 (alto tarjeta)
+     Fila2: SEPARADOR (row-gap + semi-gap)
+     Fila3: Semi2 (alto tarjeta) */
+  grid-template-rows: var(--slot-h) calc(var(--row-gap) + var(--semi-gap)) var(--slot-h);
+  row-gap: 0; /* el hueco lo crea la fila 2 */
+}
+
+.league-grid > :nth-child(2),
+.league-grid > :nth-child(4){
+  margin-top: var(--semi-offset);             /* baja columna de semifinales */
+  row-gap: calc(var(--stack-gap) * 1.75);     /* más espacio entre Semi 1 y 2 */
+}
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px){
+  .league-grid{
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+  .league-semis{
+    grid-template-rows: auto;   /* deja que se apilen normal */
+    row-gap: 16px;
+    margin-top: 0;
+  }
+  .league-final-row{
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    margin-top: 0;
+  }
+}
+

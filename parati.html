@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para ti</title>
-    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para ti</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"><!-- ojo: carpeta -->
+  <link rel="stylesheet" href="applayout.css">
+  <link rel="stylesheet" href="parati.css" />
 </head>
 
 <body class="parati-bg">
+  <!-- Header reutilizable -->
+<object data="header.html" class="include-header"></object>
+<object data="navbar.html" class="include-navbar"></object>
 
-    <div id="idParaTiContainer">
-        <h3 id="idParaTiText"> PARA TI</h3>
+  <!-- Contenido de la página -->
+<main class="page">
+  <div class="content-grid">
+    <section class="feed">
+      <div id="idParaTiContainer" class="bar">
+        <h3 id="idParaTiText">PARA TI</h3>
         <img id="idBallImage" src="https://cdn-icons-png.flaticon.com/512/4498/4498011.png" alt="">
-    </div>
+      </div>
 
-    <div id="idShareContainer">
+      <article id="idShareContainer" class="card">
         <img src="https://i.redd.it/can-somebody-add-the-lebron-james-sunshine-filter-to-this-v0-rr2bj2j3y9zc1.jpg?width=1920&format=pjpg&auto=webp&s=cbc988e8daf151b452897c184f4412a4343a8a1e" 
-        alt="Profile Picture" id="idProfilePictureParaTi">
-        <input type="text" id="idShareInput" placeholder="Comparte tus triunfos" >
-        <button id="idShareButton"> Publicar</button>
-    </div>
+             alt="Profile Picture" id="idProfilePictureParaTi">
+        <input type="text" id="idShareInput" placeholder="Comparte tus triunfos">
+        <button id="idShareButton">Publicar</button>
+      </article>
 
-    <div id="idPostContainer">
+      <article id="idPostContainer" class="card">
         <img src="https://media.tenor.com/oKeMllH3h4kAAAAm/patrick-goober.webp" alt="Pfp" id="idPfpParaTi">
-        <h4 id="idOtherProfile"> Patricio Estrella</h4>
-        <p id="idOtherPostText"> ¡Ganamos el partido! #Victoria #Pumas</p>
+        <h4 id="idOtherProfile">Patricio Estrella</h4>
+        <p id="idOtherPostText">¡Ganamos el partido! #Victoria #Pumas</p>
         <div id="idPostContainer2">
-            <img src="https://pbs.twimg.com/media/GAd_1ANWoAAS0hl.jpg" alt="Post" id="idOtherImagePost">
+          <img src="https://pbs.twimg.com/media/GAd_1ANWoAAS0hl.jpg" alt="Post" id="idOtherImagePost">
         </div>
-    </div>
+      </article>
+    </section>
 
-    <div id="idTagsContainer">
+    <aside class="sidebar">
+      <div id="idTagsContainer" class="card">
         <h4 id="idHeaderTags">Usa estos tags!</h4>
-        <label for="idTag" id="idTagLabel">Deporte-Mundial</label>
+        <label id="idTagLabel">Deporte-Mundial</label>
         <p id="idTag">#LigaMundial</p>
-        <label for="idTag1"id="idTag1Label">Deporte-Partido General</label>
+        <label id="idTag1Label">Deporte-Partido General</label>
         <p id="idTag1">#LigaGeneral</p>
-    </div>
+      </div>
 
-    <button id="idShareButton1">Publicar</button>
-
-
+      <button id="idShareButton1" class="cta">Publicar</button>
+    </aside>
+  </div>
+</main>
 </body>
-
 </html>

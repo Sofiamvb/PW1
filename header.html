@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <!-- Si prefieres usar tu style.css, mantenlo, pero añade este reset inline sí o sí -->
+  <style>
+    html, body { margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; }
+    *, *::before, *::after { box-sizing: inherit; }
+    .site-header {
+      height: 60px;            /* debe coincidir con el alto del object */
+      width: 100%;
+      background: #444; color: #fff;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1rem;         /* OJO: nada que haga que mida > 100% */
+    }
+    .logo { font-weight: bold; }
+    .search-bar { flex: 1; display: flex; justify-content: center; }
+    .search-bar input { width: 260px; padding: 5px; border-radius: 5px; border: none; }
+    .search-bar button { margin-left: 6px; border: none; padding: 5px 10px; background: #ffcc00; cursor: pointer; }
+    .user-actions button { background: transparent; border: 1px solid #fff; color:#fff; padding:5px 10px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Logo</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar" />
+      <button>Buscar</button>
+    </div>
+    <div class="user-actions">
+      <button>Iniciar sesión</button>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga Individual</title>
-     <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liga Individual</title>
+  <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="applayout.css">
+  <link rel="stylesheet" href="individualpage.css"
 </head>
 
-<body class="frontpage-bg">
+<body class="frontpage-bg individual-page">
 
-    <h2 id="idSecondHeadline"> FOOTBALL SOCCER</h2>
-    <h1 id="idFirstHeadlineI"> LIGA INDIVDUAL</h1>
-    <p id="idVS">VS</p>
+      <!-- Reutilizas tus includes si los usas en todo el sitio -->
+  <object data="header.html" class="include-header"></object>
+  <object data="navbar.html" class="include-navbar"></object>
 
-    <!-- Left side bracket -->
-    <div class="bracket-label">CUARTOS</div>
-    <div class="brackets-container">
-        <div class="brackets-quarter">QuarterFinal 1</div>
-        <div class="brackets-quarter">QuarterFinal 2</div>
-        <div class="brackets-quarter">QuarterFinal 3</div>
-        <div class="brackets-quarter">QuarterFinal 4</div>
-    </div>
-    <div class="bracket-label">SEMIFINAL</div>
-    <div class="brackets-semi-container">
-        <div class="brackets-semi">Semifinal 1</div>
-        <div class="brackets-semi">Semifinal 2</div>
-    </div>
-    <div class="bracket-label">FINAL</div>
-    <div class="brackets-final-container">
-        <div class="brackets-final">Final 1</div>
-    </div>
-    
-    <!-- Right side bracket (mirrored) -->
-<div id="quarterfinals-right-label">CUARTOS</div>
-<div class="brackets-container-right">
-    <div class="brackets-quarter">Quarterfinal 5</div>
-    <div class="brackets-quarter">Quarterfinal 6</div>
-    <div class="brackets-quarter">Quarterfinal 7</div>
-    <div class="brackets-quarter">Quarterfinal 8</div>
-</div>
-<div id="semifinals-right-label">SEMIFINAL</div>
-<div class="brackets-semi-container-right">
-    <div class="brackets-semi">Semifinal 3</div>
-    <div class="brackets-semi">Semifinal 4</div>
-</div>
-<div id="finals-right-label">FINAL</div>
-<div class="brackets-final-container-right">
-        <div class="brackets-final">Final 2</div>
-</div>
+  <div class="individual-canvas">
+    <h2 id="idSecondHeadline">FOOTBALL SOCCER</h2>
+    <h1 id="idFirstHeadlineI">LIGA INDIVIDUAL</h1>
 
-<div id="idChampionLabel"> CAMPEÓN</div>
-<div id="idChampion"> Campeón </div>
-   
-    
+    <section class="individual-grid">
+      <!-- 1) Cuartos IZQ -->
+      <div class="individual-stack">
+        <div class="individual-section-label">Cuartos</div>
+        <div class="individual-slot">QuarterFinal 1</div>
+        <div class="individual-slot">QuarterFinal 2</div>
+        <div class="individual-slot">QuarterFinal 3</div>
+        <div class="individual-slot">QuarterFinal 4</div>
+      </div>
 
+      <!-- 2) Semifinal IZQ -->
+      <div class="individual-stack individual-semis">
+        <div class="individual-section-label">Semifinal</div>
+        <div class="individual-slot">Semifinal 1</div>
+        <div class="individual-slot">Semifinal 2</div>
+      </div>
+
+      <!-- 3) Centro: Campeón + Finales -->
+      <div class="individual-center">
+        <div>
+          <div class="individual-section-label" style="text-align:center;">Campeón</div>
+          <div class="individual-champion">Campeón</div>
+        </div>
+
+        <div class="individual-finals">
+          <div class="individual-final-labels">
+            <span>Final</span><span>Final</span>
+          </div>
+          <div class="individual-final-row">
+            <div class="individual-slot">Final 1</div>
+            <div class="individual-vs">VS</div>
+            <div class="individual-slot">Final 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4) Semifinal DER -->
+      <div class="individual-stack individual-semis">
+        <div class="individual-section-label">Semifinal</div>
+        <div class="individual-slot">Semifinal 3</div>
+        <div class="individual-slot">Semifinal 4</div>
+      </div>
+
+      <!-- 5) Cuartos DER -->
+      <div class="individual-stack">
+        <div class="individual-section-label">Cuartos</div>
+        <div class="individual-slot">Quarterfinal 5</div>
+        <div class="individual-slot">Quarterfinal 6</div>
+        <div class="individual-slot">Quarterfinal 7</div>
+        <div class="individual-slot">Quarterfinal 8</div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
