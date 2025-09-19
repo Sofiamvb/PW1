@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="applayout.css">
+    <link rel="stylesheet" href="partidos.css" />
+</head>
+
+<body>
+    <object data="header.html" class="include-header"></object>
+    <object data="navbar.html" class="include-navbar"></object>
+    <main class="page">
+        <div class="pr-head">
+            <h2 class="pr-title">PARTIDOS Y RESULTADOS</h2>
+            <div class="pr-actions">
+                <button class="btn btn-mundial is-active">TORNEO MUNDIAL</button>
+                <button class="btn btn-general">TORNEO GENERAL</button>
+            </div>
+        </div>
+
+        <div class="pr-dates">
+            <button class="nav-btn" id="prev">‹</button>
+
+            <div class="dates-scroll" id="dates"></div>
+
+            <button class="nav-btn" id="next">›</button>
+        </div>
+
+        <div class="match-meta">
+            <div class="match-date"></div>
+            <div class="match-stage">Liga general · Cuartos</div>
+        </div>
+        <section id="partidos-mundial" class="match-section">
+            <div class="match-grid">
+                <article class="match-card">
+                    <div class="team">
+                        <div class="team-name">México</div>
+                        <div class="team-logo">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm11 11H5v-2l4-4 3 3 5-5 2 2v6Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="vs">vs</div>
+                        <div class="score">2–0</div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-name">Brasil</div>
+                        <div class="team-logo">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm11 11H5v-2l4-4 3 3 5-5 2 2v6Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="match-card">
+
+                </article>
+            </div>
+        </section>
+
+        <section id="partidos-general" class="match-section" hidden>
+            <div class="match-grid">
+                <article class="match-card">
+                    <div class="team">
+                        <div class="team-name">Pollitos FC</div>
+                        <div class="team-logo">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm11 11H5v-2l4-4 3 3 5-5 2 2v6Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="vs">vs</div>
+                        <div class="score">2–0</div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-name">Los chicuarotes</div>
+                        <div class="team-logo">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm11 11H5v-2l4-4 3 3 5-5 2 2v6Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="match-card">
+                    <!-- rellena con otro partido -->
+                </article>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script src="partidos.js"></script>
+
+</html>

@@ -1,0 +1,168 @@
+/* fila superior */
+.pr-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3e3e3;
+    padding: 0rem 0rem 4rem 0rem;
+}
+
+.pr-title {
+    margin: 2rem 0rem 0rem 5rem;
+    font-size: 32px;
+    font-weight: 600;
+    color: #111;
+}
+
+.pr-actions {
+    display: flex;
+    gap: 16px;
+    margin: 2rem 5rem 0rem 0rem;
+}
+
+.btn {
+    all: unset;
+    padding: 10px 16px;
+    background: #d3d3d3;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn.is-active{
+  background: #9f9f9f;
+  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,.25);
+}
+
+/* fila inferior */
+.pr-dates {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #e3e3e3;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.nav-btn {
+    all: unset;
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    background: #111;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dates-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 8px 0;
+    flex: 1;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.dates-scroll::-webkit-scrollbar {
+    /* Chrome/Edge */
+    display: none;
+}
+
+.pill {
+    all: unset;
+    white-space: nowrap;
+    padding: 8px 14px;
+    background: #bdbdbd;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Meta (fecha y fase) */
+.match-section { --card-min: 440px; --card-max: 540px; }
+
+.match-meta {
+    margin: 2rem 0rem 0rem 10rem;
+}
+
+.match-date {
+    font-weight: 800;
+    color: #111;
+}
+
+.match-stage {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Grid de 2 cards */
+.match-grid {
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-min), var(--card-max)));
+  justify-content: center;
+}
+
+/* Card */
+.match-card {
+    background: #dedede;
+    border-radius: 8px;
+    padding: 2.5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 24px;
+}
+
+/* Columnas internas */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-name {
+    font-weight: 900;
+    letter-spacing: .02em;
+}
+
+.team-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    background: #cfcfcf;
+    display: grid;
+    place-items: center;
+}
+
+.team-logo svg {
+    width: 80%;
+    height: 80%;
+    fill: #111;
+}
+
+/* Columna central */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.vs {
+    font-weight: 800;
+}
+
+.score {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.pill.is-active{
+  background: #111;
+  color: #fff;
+}
