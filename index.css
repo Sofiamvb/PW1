@@ -11,7 +11,7 @@ body.iniciar-sesion-bg {
   flex-direction: column;
   align-items: center;   /* centrar horizontal */
   justify-content: center; /* centrar vertical */
-  background-color: rgb(128, 206, 215);
+  background-color: #102c54;
 }
 
 #idImage img {
@@ -34,8 +34,12 @@ body.iniciar-sesion-bg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 126, 167);
+  background-color: rgb(255, 255, 255);
   color: black;
+}
+
+.col-titulo{
+  color: rgb(255, 255, 255);
 }
 
 #idIniciar {
@@ -58,6 +62,8 @@ body.iniciar-sesion-bg {
   font-weight: bold;
 }
 
+
+
 .first-forminput {
   width: 100%;
   margin-bottom: 15px;
@@ -78,7 +84,7 @@ body.iniciar-sesion-bg {
 #idButtonIniciar {
   width: 100%;
   padding: 12px;
-  background-color: #003249;
+  background-color:#102c54;
   color: white;
   border: none;
   border-radius: 4px;
@@ -98,3 +104,4 @@ body.iniciar-sesion-bg {
   font-weight: bold;
   text-decoration: underline;
 }
+

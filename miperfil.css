@@ -4,13 +4,13 @@
   --shadow: 0 6px 16px rgba(0,0,0,.10);
   --text: #111;
   --text-muted: #666;
-  --brand: #003249;
+  --brand: #102c54;
 }
 
 /* ---------- Titulo ---------- */
 .pr-head{
   display:flex; align-items:center;
-  background:#e3e3e3;
+  background:#4f96be;
   padding: 0 0 2rem 0;
   color:#111;
 }
@@ -34,7 +34,7 @@
   box-shadow: var(--shadow);
   padding: 18px;
 }
-.card-dark{ background:#919191; color:#111; }
+.card-dark{ background:#e3e3e3; color:#111; }
 .shadow-lg{ box-shadow: 0 22px 38px rgba(0,0,0,.25); }
 
 /* ---------- Barra “MIS POSTS” ---------- */
@@ -125,6 +125,6 @@
   background: var(--brand); color:#fff;
 }
 .btn-secondary{
-  background:#d0d0d0; color:#111;
+  background:var(--brand); color:#ffffff;
 }
 .btn-xs{ padding: 6px 12px; border-radius: 8px; }

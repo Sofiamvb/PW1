@@ -106,6 +106,24 @@ body.frontpage-bg.individual-page {
 }
 
 
+
+.individual-final-row {
+
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+align-items: center;
+
+}
+.btnSimular{
+  grid-column: 2;
+  justify-self: center;
+all:unset;
+margin-top:  20px;;
+text-align: center;
+
+}
+
+
 .individual-vs {
   text-align: center;
   font-weight: 900;

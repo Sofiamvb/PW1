@@ -63,7 +63,8 @@ body{
   margin: 0 0 4px 0;
   font-size: 32px;
   color: var(--ink);
-  font-weight: 800;
+  font-weight: 700;
+  
 }
 
 .label{ font-size: 20px; color: var(--muted); margin-bottom: 4px; }
