@@ -1,6 +1,6 @@
 /***** === BASE  === *****/
 :root {
-  --header-h: 64px;
+  --headerh: 50px;
   /* altura del header */
   --nav-w: 64px;
   /* ancho de la navbar lateral */
@@ -57,22 +57,22 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--header-h);
+  height: var(--headerh);
 }
 
 .include-navbar {
   position: fixed;
   z-index: 900;
-  top: var(--header-h);
+  top: var(--headerh);
   left: 0;
   width: var(--nav-w);
-  height: calc(100vh - var(--header-h));
+  height: 100vh;
 }
 
 /***** === PAGE WRAPPER: da offset para no quedar bajo de header/nav === *****/
 .page {
   position: relative;
-  padding-top: var(--header-h);
+  padding-top: var(--headerh);
   padding-left: var(--nav-w);
   min-height: 100vh;
 }
