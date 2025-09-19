@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="applayout.css">
+    <link rel="stylesheet" href="miperfil.css" />
+</head>
+
+<body>
+    <object data="header.html" class="include-header"></object>
+    <object data="navbar.html" class="include-navbar"></object>
+    <main class="page">
+        <!-- Título -->
+        <div class="pr-head">
+            <h2 class="pr-title">PERFIL DE USUARIO</h2>
+        </div>
+
+        <!-- Layout 2 columnas -->
+        <section class="mi-perfil">
+            <div class="content-grid">
+                <!-- Columna izquierda: MIS POSTS -->
+                <div class="feed">
+                    <div class="bar">
+                        <h3 class="bar-title">MIS POSTS</h3>
+                        <img class="bar-icon" src="https://cdn-icons-png.flaticon.com/512/4498/4498011.png" alt="">
+                    </div>
+
+                    <div class="posts-list">
+                        <!-- Post -->
+                        <article class="card post">
+                            <img class="pfp" src="https://media.tenor.com/oKeMllH3h4kAAAAm/patrick-goober.webp"
+                                alt="Pfp">
+                            <h4 class="user-name">Patricio Estrella</h4>
+                            <p class="post-text">¡Ganamos el partido! #Victoria #Pumas</p>
+                            <div class="post-media">
+                                <img src="https://pbs.twimg.com/media/GAd_1ANWoAAS0hl.jpg" alt="Post">
+                            </div>
+                        </article>
+
+                        <!-- Duplica <article class="card post"> ... </article> para más posts -->
+                    </div>
+                </div>
+
+                <!-- Columna derecha: PERFIL -->
+                <aside class="profile card card-dark shadow-lg">
+                    <h2 class="profile-title">Nombre de usuario</h2>
+
+                    <img class="avatar-lg"
+                        src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png"
+                        alt="Foto de perfil">
+
+                    <button class="btn btn-secondary btn-xs">Editar perfil</button>
+
+                    <p class="profile-sub">Dentro de x días cumples x años</p>
+
+                    <form class="profile-form">
+                        <div class="row-2">
+                            <div class="field">
+                                <label class="label">Nombre (s)</label>
+                                <input class="input" type="text" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="field">
+                                <label class="label">Apellidos</label>
+                                <input class="input" type="text" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Correo electrónico</label>
+                            <input class="input" type="email" placeholder="Ejemplo@correo.com">
+                        </div>
+
+                        <div class="row-2">
+                            <div class="field w-160">
+                                <label class="label">Edad</label>
+                                <input class="input" type="number" placeholder="00">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary">Confirmar</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+:root{
+  --bg-section: #e9e9e9;
+  --radius: 12px;
+  --shadow: 0 6px 16px rgba(0,0,0,.10);
+  --text: #111;
+  --text-muted: #666;
+  --brand: #003249;
+}
+
+/* ---------- Titulo ---------- */
+.pr-head{
+  display:flex; align-items:center;
+  background:#e3e3e3;
+  padding: 0 0 2rem 0;
+  color:#111;
+}
+.pr-title{
+  margin: 1rem 0 0 5rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* ---------- Grid principal: 2 columnas ---------- */
+.content-grid{
+  display:grid;
+  grid-template-columns: 420px 1fr;   /* posts | perfil */
+  gap: 40px;
+}
+
+/* ---------- Tarjeta base ---------- */
+.card{
+  background: var(--bg-section);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.card-dark{ background:#919191; color:#111; }
+.shadow-lg{ box-shadow: 0 22px 38px rgba(0,0,0,.25); }
+
+/* ---------- Barra “MIS POSTS” ---------- */
+.bar{
+  display:flex; align-items:center; gap:12px;
+  background: var(--bg-section);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 22px;
+  margin-bottom: 12px;
+}
+.bar-title{ margin:0; font-size: 22px; font-weight: 800; letter-spacing:.3px; }
+.bar-icon{ width:22px; height:22px; }
+
+/* ---------- Feed de posts ---------- */
+.posts-list{ display:flex; flex-direction:column; gap:16px; }
+
+
+.post{
+  display:grid;
+  grid-template-columns: 56px 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap:12px; row-gap:8px;
+}
+.post .pfp{
+  grid-row: 1 / span 2;
+  width:56px; height:56px; border-radius:50%;
+}
+.post .user-name{ margin:0; font-size:18px; font-weight:700; }
+.post .post-text{ margin:0; color: var(--text); }
+.post .post-media{ grid-column: 1 / -1; border-radius:14px; overflow:hidden; }
+.post .post-media img{ display:block; width:100%; height:auto; }
+
+/* ---------- Panel de perfil  ---------- */
+.profile{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 12px;
+  padding: 28px;
+}
+.profile-title{
+  margin: 6px 0 6px;
+  font-size: 34px;
+  font-weight: 900;
+  text-align:center;
+}
+.avatar-lg{
+  width:88px; height:88px; border-radius:50%;
+  object-fit: cover;
+}
+.profile-sub{
+  margin: 8px 0 10px;
+  font-weight: 700;
+  text-align:center;
+}
+
+/* ---------- Formulario del perfil ---------- */
+.profile-form{
+  width: 100%;
+  max-width: 760px;
+  display:flex; flex-direction:column;
+  gap: 12px;
+  margin-top: 4px;
+}
+.row-2{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+.field{ display:flex; flex-direction:column; gap:6px; }
+.w-160{ max-width: 180px; } /* para edad, se ve como en el mock */
+
+.label{ font-size:14px; color:#111; font-weight:700; }
+.input{
+  width:100%; box-sizing:border-box;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 0;
+  background:#dcdcdc;
+  outline:none;
+}
+.input::placeholder{ color:#777; }
+
+/* ---------- Botones ---------- */
+.btn{
+  all:unset; display:inline-block; cursor:pointer;
+  border-radius: 10px; padding: 10px 16px; font-weight: 700;
+}
+.btn-primary{
+  align-self:flex-start;
+  background: var(--brand); color:#fff;
+}
+.btn-secondary{
+  background:#d0d0d0; color:#111;
+}
+.btn-xs{ padding: 6px 12px; border-radius: 8px; }
