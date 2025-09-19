@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear equipo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="applayout.css">
+    <link rel="stylesheet" href="crearequipo.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <object data="header.html" class="include-header"></object>
+    <object data="navbar.html" class="include-navbar"></object>
+
+    <main class="page">
+        <div class="tabs">
+            <button class="tab tab-general is-active">Equipo
+                general</button>
+            <button class="tab tab-mundial">Equipo mundial</button>
+        </div>
+
+        <!-- Sección 1 -->
+        <section id="equipo-general" class="workarea">
+            <div class="col">
+                <h2 class="h-title">Crea tu equipo</h2>
+
+                <label class="label">Nombra tu equipo</label>
+                <input class="input" type="text" placeholder="Ej. Pollitos FC" />
+
+                <div class="panel">
+                    <div class="panel-title">JUGADORES</div>
+                </div>
+
+                <div class="footer-actions">
+                    <div class="counter"><strong>Jugadores</strong><br>0/11</div>
+                </div>
+            </div>
+
+            <div class="col big-board">
+                <div class="select-wrap">
+                    <div class="select-field">
+                        <label for="posicion">Posición</label>
+                        <select id="posicion" class="select">
+                            <option selected>DEF</option>
+                            <option>MED</option>
+                            <option>DEL</option>
+                            <option>POR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <button class="panel-crear" type="button">
+                    HAS CLICK Y COMIENZA A JUGAR CON TU EQUIPO
+                </button>
+            </div>
+
+            <div class="col upload-image">
+                <div class="logo-card">
+                    <h4 class="card-title">LOGO DE EQUIPO</h4>
+                    <div id="dropzone" class="dropzone" tabindex="0" role="button"
+                        aria-label="Sube tu logo: clic o arrastra una imagen">
+                        <svg class="placeholder" width="96" height="96" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm11 11H5v-2l4-4 3 3 5-5 2 2v6Z" />
+                        </svg>
+                        <!-- preview -->
+                        <img id="preview" alt="Vista previa del logo" hidden>
+                        <!-- input real -->
+                        <input id="logoInput" type="file" accept="image/*" hidden>
+                    </div>
+                    <button id="btnPick" class="btn">Cargar</button>
+                    <small class="hint">PNG/JPG, máx. 2&nbsp;MB</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2 (oculta) -->
+        <section id="equipo-mundial" class="workarea" hidden>
+            <div class="col">
+                <h2 class="h-title">Crea tu equipo</h2>
+
+                <div class="panel">
+                    <div class="panel-title">JUGADORES</div>
+                </div>
+
+                <div class="footer-actions">
+                    <div class="counter"><strong>Jugadores</strong><br>0/11</div>
+                    <button class="btn">Crear equipo</button>
+                </div>
+            </div>
+
+            <div class="col big-board">
+                <div class="select-wrap">
+                    <div class="select-field">
+                        <label for="posicion">Posición</label>
+                        <select id="posicion" class="select">
+                            <option selected>DEF</option>
+                            <option>MED</option>
+                            <option>DEL</option>
+                            <option>POR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="crearequipo.js"></script>
+
+</html>
