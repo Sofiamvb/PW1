@@ -1,6 +1,6 @@
 /* ====== Layout respecto a header y navbar existentes ====== */
 :root{
-  --headerh: 50px;  /* como definiste en el header */
+
   --nav-w: 64px;      /* navbar lateral */
   --gap: 28px;
 

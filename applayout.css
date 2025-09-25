@@ -69,6 +69,8 @@ body {
   height: 100vh;
 }
 
+
+
 /***** === PAGE WRAPPER: da offset para no quedar bajo de header/nav === *****/
 .page {
   position: relative;

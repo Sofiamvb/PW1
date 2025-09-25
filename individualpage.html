@@ -7,72 +7,118 @@
   <title>Liga Individual</title>
   <link rel="stylesheet" href="boostrap/css/bootstrap.css">
   <link rel="stylesheet" href="applayout.css">
-  <link rel="stylesheet" href="individualpage.css" </head>
+  <link rel="stylesheet" href="individualpage.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
 
 <body class="frontpage-bg individual-page">
 
   <!-- Header / Navbar -->
   <object data="header.html" class="include-header"></object>
   <object data="navbar.html" class="include-navbar"></object>
+  <main class="page">
+    <div class="individual-canvas">
+      <h2 id="idSecondHeadline">FOOTBALL SOCCER</h2>
+      <h1 id="idFirstHeadlineI">LIGA INDIVIDUAL</h1>
 
-  <div class="individual-canvas">
-    <h2 id="idSecondHeadline">FOOTBALL SOCCER</h2>
-    <h1 id="idFirstHeadlineI">LIGA INDIVIDUAL</h1>
-
-    <section class="individual-grid">
-      <!-- Cuartos IZQ -->
-      <div class="individual-stack">
-        <div class="individual-section-label">Cuartos</div>
-        <div class="individual-slot">QuarterFinal 1</div>
-        <div class="individual-slot">QuarterFinal 2</div>
-        <div class="individual-slot">QuarterFinal 3</div>
-        <div class="individual-slot">QuarterFinal 4</div>
-      </div>
-
-      <!-- Semifinal IZQ -->
-      <div class="individual-stack individual-semis">
-        <div class="individual-section-label">Semifinal</div>
-        <div class="individual-slot">Semifinal 1</div>
-        <div class="individual-slot">Semifinal 2</div>
-      </div>
-
-      <!-- Centro: Campeón + Finales -->
-      <div class="individual-center">
-        <div>
-          <div class="individual-section-label" style="text-align:center;">Campeón</div>
-          <div class="individual-champion">Campeón</div>
+      <section class="individual-grid">
+        <!-- Cuartos IZQ -->
+        <div class="individual-stack">
+          <div class="individual-section-label">Cuartos</div>
+          <div class="individual-slot">QuarterFinal 1</div>
+          <div class="individual-slot">QuarterFinal 2</div>
+          <div class="individual-slot">QuarterFinal 3</div>
+          <div class="individual-slot">QuarterFinal 4</div>
         </div>
 
-        <div class="individual-finals">
-          <div class="individual-final-labels">
-            <span>Final</span><span>Final</span>
+        <!-- Semifinal IZQ -->
+        <div class="individual-stack individual-semis">
+          <div class="individual-section-label">Semifinal</div>
+          <div class="individual-slot">Semifinal 1</div>
+          <div class="individual-slot">Semifinal 2</div>
+        </div>
+
+        <!-- Centro: Campeón + Finales -->
+        <div class="individual-center">
+          <div>
+            <div class="individual-section-label" style="text-align:center;">Campeón</div>
+            <div class="individual-champion">Campeón</div>
           </div>
-          <div class="individual-final-row">
-            <div class="individual-slot">Final 1</div>
-            <div class="individual-vs">VS</div>
-            <div class="individual-slot">Final 2</div>
-            <button class="btnSimular">Simular partido</button>
+
+          <div class="individual-finals">
+            <div class="individual-final-labels">
+              <span>Final</span><span>Final</span>
+            </div>
+            <div class="individual-final-row">
+              <div class="individual-slot">Final 1</div>
+              <div class="individual-vs">VS</div>
+              <div class="individual-slot">Final 2</div>
+
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Semifinal DER -->
-      <div class="individual-stack individual-semis">
-        <div class="individual-section-label">Semifinal</div>
-        <div class="individual-slot">Semifinal 3</div>
-        <div class="individual-slot">Semifinal 4</div>
-      </div>
+        <!-- Semifinal DER -->
+        <div class="individual-stack individual-semis">
+          <div class="individual-section-label">Semifinal</div>
+          <div class="individual-slot">Semifinal 3</div>
+          <div class="individual-slot">Semifinal 4</div>
+        </div>
 
-      <!-- Cuartos DER -->
-      <div class="individual-stack">
-        <div class="individual-section-label">Cuartos</div>
-        <div class="individual-slot">Quarterfinal 5</div>
-        <div class="individual-slot">Quarterfinal 6</div>
-        <div class="individual-slot">Quarterfinal 7</div>
-        <div class="individual-slot">Quarterfinal 8</div>
-      </div>
-    </section>
-  </div>
+        <!-- Cuartos DER -->
+        <div class="individual-stack">
+          <div class="individual-section-label">Cuartos</div>
+          <div class="individual-slot">Quarterfinal 5</div>
+          <div class="individual-slot">Quarterfinal 6</div>
+          <div class="individual-slot">Quarterfinal 7</div>
+          <div class="individual-slot">Quarterfinal 8</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+
+    <div class="container-logo">
+
+      <img src="public/logo/image0.png" alt="">
+
+    </div>
+
+
+    <div class="container-texto">
+
+      <nav>
+        <ul>
+
+          <li><a href="">HOME</a></li>
+          <li><a href="">PARTIDOS</a></li>
+          <li><a href="">CAMPEONAOS</a></li>
+          <li><a href="">PERFIL</a></li>
+          <li><a href="">PARA TI</a></li>
+
+
+        </ul>
+
+      </nav>
+
+
+    </div>
+
+    <div class="container-texto-date">
+
+      <p>©</p>
+      <p id="date-footer"></p>
+      <p>Futsy League.Todos los derechos reservados</p>
+
+    </div>
+
+
+  </footer>
+
+ 
+
 </body>
+
+ <script src="footer.js"></script>
 
 </html>
